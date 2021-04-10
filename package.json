@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node server/app.js"
+    "dev": "nodemon --exec babel-node server/app.js",
+    "prettier": "prettier --write './**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
     "@babel/core": "^7.13.15",
     "@babel/node": "^7.13.13",
     "@babel/preset-env": "^7.13.15",
-    "nodemon": "^2.0.7"
+    "babel-plugin-module-resolver": "^4.1.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   }
 }

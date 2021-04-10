@@ -6,6 +6,5 @@ const userRouters = new Router();
 
 userRouters.use("api/user/auth", userAuthRouter);
 
-export {
-  userRouters
-}
+export default userRouters
+
