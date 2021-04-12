@@ -1,9 +1,16 @@
 import { Router } from "express";
-import { auth } from "@controllers/user/user.controller";
+// import { auth } from "@controllers/user/user.controller";
 
-const userAuthRouter = new Router();
+const authRouter = new Router();
 
-userAuthRouter.post("/login", auth.login);
-userAuthRouter.post("/register", auth.register);
+function login (req, res) {
+  res.send("Hello from login");
+}
+function register (req, res) {
+  res.send("Hello from register");
+}
 
-export default userAuthRouter;
+authRouter.post("/login", login);
+authRouter.post("/register", register);
+
+module.exports = authRouter;

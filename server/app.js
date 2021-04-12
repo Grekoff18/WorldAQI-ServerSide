@@ -1,6 +1,6 @@
 import Express from "express";
 import config from "@config/main.config";
-import api from "@api";
+import api from "./api/main.router";
 import "@config/mongoose.config";
 
 // INIT Express
